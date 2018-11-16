@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+    text-decoration: none;
+}
+
+
+.header{
+position: relative;
+    text-align: center;
+}
+
+.header h1{
+    color: #142b47;
+    font-size: 46px;
+    margin-bottom: 10px;
+
+}
+
+.header p{
+    color: #142b47;
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+.form{
+    position: relative;
+    text-align: center;
+    width: 400px
+}
+
+#msg{
+    margin-top: 20px;
+
+}
+
+.form input{
+    width: 100%;
+    margin: 20px 0;
+    background: rgba(0,0,0,0);
+    border: none;
+    border-bottom: 1px solid #142b47;
+}
+
+.form button {
+    background-color: #c5d5cb;
+    border: none;
+    border-radius: 4px;
+    color: #142b47;
+    padding: 10px 32px;
+    font-size: 16px;
+    opacity: 0.6;
+    transition: 0.3s;
+    cursor: pointer;
+    margin-top: 30px;
+    font-family: 'Nunito', sans-serif;
+}
+
+button:hover{opacity: 1;}
+
+main{
+    display: flex;
+    flex-flow: column;
+    margin-top: 100px;
+    align-items: center;
+}
+
+.menu{
+    width: 100%;
+    background: #9fa8a3;
+    overflow: auto;
+}
+
+.menu ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    line-height: 60px;
+}
+
+.menu li{
+    float: left;
+}
+
+.menu ul li a {
+    background: #9fa8a3;
+    text-decoration: none;
+    width: 130px;
+    display:block ;
+    text-align: center;
+    color: #f2f2f2;
+    font-size:18px ;
+    letter-spacing: 0.8px;
+    font-family: 'Nunito', sans-serif;
+
+}
+
+.menu li a:hover{
+    color: #fff;
+    opacity: 0.5;
+    font-size: 19px;
+}
+.logo{
+    margin:15px;
+    float: right;
+}
+.search-form{
+    margin-top:15px;
+    float: right;
+
+}
+
+.menu input[type=text]{
+    padding: 7px;
+    border: none;
+    font-size: 16px;
+    width: 200px;
+    font-family: 'Nunito', sans-serif;
+}
+
+.menu button{
+    float: right;
+    background: #c5d5cb;
+    color: white;
+    border-radius: 0 5px 5px 0;
+    cursor:pointer ;
+    position: relative;
+    padding: 7px;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+    border: none;
+    font-size: 16px;
+    opacity: 0.8;
+    transition: 0.3s;
+}
+
+.menu button:hover{opacity: 1;}
