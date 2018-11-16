@@ -91,7 +91,8 @@ body{
 }
 
 .img{
-    width: 300px;
+    width: 270px;
+    height: auto;
     float: left;
     overflow: hidden;
 }
@@ -139,17 +140,18 @@ body{
 
 .ratingtitle{
     position: absolute;
-    bottom: 13%;
-    left: 30.5%;
+    bottom: 7%;
+    left: 30%;
     transform: translate(-50%, -50%);
     display: flex;
+    margin-bottom: 6px;
 }
 
 
 .rating{
     position: absolute;
-    bottom: 10%;
-    left: 30%;
+    bottom: 4%;
+    left: 29.5%;
     transform: translate(-50%, -50%) rotateY(180deg);
     display: flex;
 }
