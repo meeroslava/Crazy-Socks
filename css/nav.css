@@ -1,7 +1,6 @@
-
 .menu{
     width: 100%;
-    background: #9fa8a3;
+    background: #9fa8a3; /*background of nav*/
     overflow: auto;
 }
 
@@ -17,16 +16,13 @@
 }
 
 .menu ul li a {
-    background: #9fa8a3;
     text-decoration: none;
     width: 130px;
     display:block ;
     text-align: center;
-    color: #f2f2f2;
+    color: #f2f2f2; /*color of text*/
     font-size:18px ;
-    letter-spacing: 0.8px;
-    font-family: 'Nunito', sans-serif;
-
+    letter-spacing: 0.8px; /*space between letters*/
 }
 
 .menu li a:hover{
@@ -34,14 +30,15 @@
     opacity: 0.5;
     font-size: 19px;
 }
+
 .logo{
     margin:15px;
     float: right;
 }
+
 .search-form{
     margin-top:15px;
     float: right;
-
 }
 
 .menu input[type=text]{
@@ -49,14 +46,13 @@
     border: none;
     font-size: 16px;
     width: 200px;
-    font-family: 'Nunito', sans-serif;
 }
 
 .menu button{
     float: right;
-    background: #c5d5cb;
+    background: #c5d5cb; /*button color*/
     color: white;
-    border-radius: 0 5px 5px 0;
+    border-radius: 0 6px 6px 0;
     cursor:pointer ;
     position: relative;
     padding: 7px;
@@ -68,6 +64,6 @@
     transition: 0.3s;
 }
 
-.menu button:hover{opacity: 1;}
-
-
+.menu button:hover{
+    opacity: 1;
+}
