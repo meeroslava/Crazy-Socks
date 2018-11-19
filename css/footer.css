@@ -1,0 +1,53 @@
+.footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: yellow;
+    width: 100%;
+    overflow: auto;
+    line-height: 60px;
+    background: mediumpurple; /*background of nav*/
+}
+
+.footer ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    line-height: 30px;
+}
+
+
+.footer p{
+    float: left;
+}
+
+.footer social a{
+    position: fixed;
+    float: left;
+}
+
+.footer li{
+    float: left;
+}
+
+.footer ul li a {
+    text-decoration: none;
+    width: 130px;
+    display:block ;
+    text-align: center;
+    color: purple; /*color of logos*/
+    font-size:18px ;
+    letter-spacing: 0.8px; /*space between letters*/
+}
+
+.footer li a:hover{
+    color: #fff;
+    opacity: 0.5;
+    font-size: 19px;
+}
+
+.social{
+    margin:15px;
+    float: right;
+}
