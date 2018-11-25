@@ -3,11 +3,12 @@
     left: 0;
     bottom: 0;
     width: 100%;
-    color: yellow;
+    color: black;
     width: 100%;
     overflow: auto;
     line-height: 60px;
-    background: mediumpurple; /*background of nav*/
+    background: #fdddd3; /*background of footer*/
+    font-size: 12px;
 }
 
 .footer ul{
@@ -36,13 +37,13 @@
     width: 130px;
     display:block ;
     text-align: center;
-    color: purple; /*color of logos*/
+    color: #7e6e69; /*color of logos*/
     font-size:18px ;
     letter-spacing: 0.8px; /*space between letters*/
 }
 
 .footer li a:hover{
-    color: #fff;
+    color: #d54012;
     opacity: 0.5;
     font-size: 19px;
 }
