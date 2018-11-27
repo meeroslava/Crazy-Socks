@@ -68,3 +68,7 @@ main{
     margin-top: 100px;
     align-items: center;
 }
+
+body {
+    background-color: red;
+}

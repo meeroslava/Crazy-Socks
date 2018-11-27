@@ -34,3 +34,7 @@ main{
     align-items: center;
 }
 
+
+body {
+    background-color: red;
+}
