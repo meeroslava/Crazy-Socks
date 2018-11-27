@@ -136,3 +136,7 @@ main{
 }
 
 .menu button:hover{opacity: 1;}
+
+body {
+    background-color: red;
+}
