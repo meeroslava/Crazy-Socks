@@ -36,13 +36,11 @@
 }
 
 
-.header button {
+.header a {
     border: none;
     border-radius: 4px;
     margin-top: 30px;
     font-family: 'Nunito', sans-serif;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
     text-align: center;
     background-color: #f1ca5c;
     color: white;
@@ -55,4 +53,4 @@
     alignment: center;
 }
 
-button:hover{opacity: 1;}
+a:hover{opacity: 1;}
