@@ -90,8 +90,6 @@ h2{
 }
 
 .filter > div {
-    width: 300px;
-    display: flex;
     flex-flow: column;
 }
 
