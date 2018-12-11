@@ -54,6 +54,7 @@ h2{
 
 .priceRange{
     width: 100%;
+    margin-bottom: 10px;
 }
 
 .slider{
@@ -80,4 +81,21 @@ h2{
     cursor: pointer;
 }
 
+
+.filter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.filter > div {
+    width: 300px;
+    display: flex;
+    flex-flow: column;
+}
+
+.filter > div select {
+    width: 200px;
+}
 
