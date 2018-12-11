@@ -59,12 +59,12 @@ body {
     width: 115px;
 }
 
-.description span {
+.description a {
     margin-top: 15px;
-    display: block;
-    font-size: 14px;
-    color: #282c31;
+    display: inline-block;
     font-size: 15px;
+    color: #282c31;
+
 }
 
 .quantity {
@@ -110,13 +110,16 @@ body {
     text-align: center;
     font-size: 16px;
     color: #383c40;
+
+
 }
 
 .total-payment{
     font-size: 20px;
-    margin-right: 150px;
+    margin-right: 50px;
     text-align: right;
     color: #383c40;
+
 }
 
 .payment button {
@@ -124,12 +127,12 @@ body {
     border: none;
     border-radius: 4px;
     color: #142b47;
-    padding: 10px 32px;
+    padding: 10px 22px;
     font-size: 16px;
     opacity: 0.6;
     transition: 0.3s;
     cursor: pointer;
-    margin-left: 580px;
+    margin-left: 800px;
     margin-bottom: 20px;
 
 }

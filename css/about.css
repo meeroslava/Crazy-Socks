@@ -9,22 +9,31 @@
     text-decoration: none;
 }
 
-.header{
+.header {
     position: relative;
     text-align: center;
+    border: 1px solid;
+    border-color: darkgrey;
+    border-radius: 15px;
+    padding: 20px 20px 20px 20px;
+    background: #E1E8EE;
 }
 
 .header h1{
     color: #142b47;
     font-size: 46px;
     margin-bottom: 10px;
+    padding-bottom: 50px;
 
 }
 
 .header p{
+    margin: 20px 20px 20px 20px;
     color: #142b47;
     font-size: 14px;
-    margin-bottom: 20px;
+    width: 500px;
+    text-align: justify;
+
 }
 
 main{
@@ -36,5 +45,5 @@ main{
 
 
 body {
-    background-color: red;
+
 }
