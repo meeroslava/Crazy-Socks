@@ -77,7 +77,7 @@ body{
 .ratingtitle{
     position: absolute;
     bottom: 7%;
-    left: 30%;
+    left: 46%;
     transform: translate(-50%, -50%);
     display: flex;
     margin-bottom: 6px;
@@ -87,9 +87,10 @@ body{
 .rating{
     position: absolute;
     bottom: 4%;
-    left: 29.5%;
+    left: 45%;
     transform: translate(-50%, -50%) rotateY(180deg);
     display: flex;
+
 }
 
 .rating input{

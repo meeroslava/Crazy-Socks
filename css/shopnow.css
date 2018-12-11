@@ -71,3 +71,8 @@ h2{
     width: 200px;
 }
 
+#type{
+    background: #c06c84 ;
+    padding: 5px 5px 5px 5px;
+    border-radius: 7px;
+}
