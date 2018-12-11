@@ -15,20 +15,24 @@ main{
     margin-bottom: 80px;
 }
 
-h1, h2{
-    color: gray();
-    text-align: center;
-}
+.title{
+    color: #c06c84; /* title color*/
+    font-size: 46px;
+    letter-spacing: 2px;
+    padding: 20px}
 
 h1{
+    color: #4c495a;
     font-size: 46px;
     padding: 30px;
     margin: 20px;
 }
 
 h2{
+    color: #4c495a;
     font-size: 28px;
     padding: 20px;
+    text-align: center;
 }
 
 .items{
@@ -52,39 +56,9 @@ h2{
     float: left;
 }
 
-.priceRange{
-    width: 100%;
-    margin-bottom: 10px;
-}
-
-.slider{
-    width: 200px;
-    height: 20px;
-    background-color: #a8f1eb;
-    border-radius: 20px;
-    opacity: 0.6;
-    transition: opacity 0.3s;
-    -webkit-appearance: none;
-}
-
-.slider:hover{
-    opacity: 1;
-}
-
-.slider::-webkit-slider-thumb{
-    -webkit-appearance: none;
-    appearance: none;
-    width: 20px;
-    height: 20px;
-    border-radius: 20px;
-    background-color: #f1ca5c;
-    cursor: pointer;
-}
-
-
 .filter {
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
     margin-top: 30px;
 }

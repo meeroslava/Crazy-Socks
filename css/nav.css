@@ -1,6 +1,6 @@
 .menu{
     width: 100%;
-    background: #a8f1eb; /*background of nav*/
+    background: #ececee; /*background of nav*/
     overflow: auto;
 }
 
@@ -20,15 +20,16 @@
     width: 130px;
     display:block ;
     text-align: center;
-    color: #f2f2f2; /*color of text*/
+    color: #4c495a; /*color of text*/
     font-size:18px ;
     letter-spacing: 0.8px; /*space between letters*/
 }
 
 .menu li a:hover{
-    color: #fff;
+    color: #15121c;
     opacity: 0.5;
-    font-size: 19px;
+    font-size: 20px;
+    letter-spacing: 2px;
 }
 
 .logo{
@@ -50,8 +51,8 @@
 
 .menu button{
     float: right;
-    background: #f1ca5c; /*button color*/
-    color: white;
+    background: #c06c84; /*button color*/
+    color: black;
     border-radius: 0 6px 6px 0;
     cursor:pointer ;
     position: relative;
@@ -59,7 +60,7 @@
     box-sizing: border-box;
     border: none;
     font-size: 16px;
-    opacity: 0.7;
+    opacity: 0.6;
     transition: 0.3s;
 }
 

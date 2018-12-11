@@ -12,7 +12,7 @@
     position: relative;
     text-align: center;
     background: url('../images_of_socks/socks.jpeg');
-    min-height: 600px;
+    min-height: 660px;
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -20,19 +20,23 @@
     flex-flow: column;
     justify-content: center;
     align-items: center;
+    letter-spacing: 2px;
 }
 
 .header .title {
-    font-size: 50px;
+    font-size: 40px;
     width: 680px;
-    background-color: rgba(134, 134, 134, 0.3);
+    color: #4c495a;
+    background-color: rgba(255, 255, 255, 0.3);
     margin-bottom: 20px;
     padding: 20px;
+
+
 }
 
 .header .title strong {
-    color: red;
-    font-size: 80px;
+    color: #8e5062;
+    font-size: 70px;
 }
 
 
@@ -42,7 +46,7 @@
     margin-top: 30px;
     font-family: 'Nunito', sans-serif;
     text-align: center;
-    background-color: #f1ca5c;
+    background-color: #4c495a;
     color: white;
     letter-spacing: 5px; /*space between letters*/
     padding: 15px 37px;

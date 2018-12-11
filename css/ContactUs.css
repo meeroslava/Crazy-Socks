@@ -1,56 +1,55 @@
 @import "nav.css";
 @import "footer.css";
-
 *{
     margin: 0;
     padding: 0;
     font-family: 'Nunito', sans-serif;
     text-decoration: none;
 }
-
-
-.header{
-position: relative;
+.contact{
+    width: 550px;
     text-align: center;
+    border-radius: 25px;
+    padding: 20px 20px 20px 20px;
+    background: #f8f8f9;
 }
 
 .header h1{
-    color: #142b47;
+    color: #c06c84;
     font-size: 46px;
-    margin-bottom: 10px;
+    letter-spacing: 2px;
 
 }
 
 .header p{
-    color: #142b47;
-    font-size: 12px;
+    color: #4c495a;
+    font-size: 14px;
     margin-bottom: 20px;
+    line-height: 2;
 }
 
 .form{
     position: relative;
     text-align: center;
-    width: 400px
 }
 
 #msg{
     margin-top: 20px;
-
 }
 
 .form input{
-    width: 100%;
+    width: 80%;
     margin: 20px 0;
     background: rgba(0,0,0,0);
     border: none;
-    border-bottom: 1px solid #142b47;
+    border-bottom: 1px solid #4c495a;
 }
 
 .form button {
-    background-color: #c5d5cb;
+    background-color: #4c495a;
     border: none;
     border-radius: 4px;
-    color: #142b47;
+    color: white;
     padding: 10px 32px;
     font-size: 16px;
     opacity: 0.6;
@@ -70,5 +69,5 @@ main{
 }
 
 body {
-    background-color: red;
+    background-color: #fdfdfd;
 }

@@ -20,9 +20,11 @@
 
 h1{
     text-align: center;
-    color: #142b47;
+    color: #c06c84;
     font-size: 40px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+
 }
 
 .form-wrap input{
@@ -33,7 +35,7 @@ h1{
     font-size: 16px;
     height: auto;
     padding: 10px 30px;
-    background-color: #f2f092;
+    background-color: #ececee;
     color: #8a97a0;
     box-shadow: 0 1px 0 rgb(0,0,0,0.03) inset;
     margin-bottom: 20px;
@@ -42,17 +44,19 @@ h1{
 }
 
 .button button {
-    background-color: #fedcd2;
+    background-color: #4c495a;
     border: none;
     border-radius: 4px;
-    color: #142b47;
+    color: white;
     padding: 10px 32px;
     font-size: 16px;
     opacity: 0.6;
     transition: 0.3s;
     cursor: pointer;
-    font-family: 'Nunito', sans-serif;
-    margin-left: 160px;
+    margin-top: 10px;
+    margin-left: 180px;
 }
+
+
 
 button:hover {opacity: 1}

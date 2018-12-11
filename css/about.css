@@ -1,49 +1,46 @@
 @import "nav.css";
 @import "footer.css";
 
-
 *{
     margin: 0;
     padding: 0;
     font-family: 'Nunito', sans-serif;
     text-decoration: none;
 }
-
+body{
+    background: #fdfdfd;
+}
 .header {
-    position: relative;
+    width: 550px;
     text-align: center;
-    border: 1px solid;
-    border-color: darkgrey;
-    border-radius: 15px;
+    border: 1px;
+    border-radius: 25px;
     padding: 20px 20px 20px 20px;
-    background: #E1E8EE;
+    margin-top: 80px;
+    margin-bottom: 40px;
+    background: #f8f8f9;
+
 }
 
 .header h1{
-    color: #142b47;
+    color: #c06c84; /* title color*/
     font-size: 46px;
-    margin-bottom: 10px;
-    padding-bottom: 50px;
+    letter-spacing: 2px;
 
 }
 
 .header p{
     margin: 20px 20px 20px 20px;
-    color: #142b47;
+    color: #4c495a;
     font-size: 14px;
-    width: 500px;
-    text-align: justify;
-
+    line-height: 2.5;
 }
 
 main{
     display: flex;
     flex-flow: column;
-    margin-top: 100px;
+    margin-top: 50px;
     align-items: center;
-}
-
-
-body {
 
 }
+
