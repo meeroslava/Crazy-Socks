@@ -29,7 +29,7 @@ body {
     height: 60px;
     border-bottom: 1px solid #E1E8EE;
     padding: 20px 30px;
-    color: #5E6977;
+    color: #c06c84;
     font-size: 20px;
     text-align: center;
 }
@@ -123,19 +123,19 @@ body {
 }
 
 .payment button {
-    background-color: #c5d5cb;
+    background-color: #c06c84;
     border: none;
     border-radius: 4px;
-    color: #142b47;
-    padding: 10px 22px;
+    color: white;
+    padding: 10px 32px;
     font-size: 16px;
     opacity: 0.6;
     transition: 0.3s;
     cursor: pointer;
-    margin-left: 800px;
-    margin-bottom: 20px;
+    margin-left: 530px;
+    margin-top: 20px;
 
 }
 
-button:hover{opacity: 1;}
+.payment button:hover{opacity: 1;}
 

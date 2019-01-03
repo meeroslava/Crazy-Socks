@@ -36,10 +36,10 @@ h2{
 }
 
 .items{
-    width: 940px;
+    width: 990px;
     height: auto;
-    margin-left: 42px;
-    margin-right: 42px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .item img{
@@ -48,9 +48,9 @@ h2{
 }
 
 .item{
-    max-width: 220px;
-    margin: 25px 31.5px 0px 31.5px;
-    padding-bottom: 10px;
+    max-width: 265px;
+    height: 320px;
+    margin: 20px 20px 20px 20px;
     font-size: 14px;
     text-align: center;
     float: left;
@@ -76,3 +76,4 @@ h2{
     padding: 5px 5px 5px 5px;
     border-radius: 7px;
 }
+

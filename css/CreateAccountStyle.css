@@ -57,6 +57,15 @@ h1{
     margin-left: 180px;
 }
 
-
+.error{
+    width: 92%;
+    margin: 0px auto;
+    padding: 10px;
+    border: 1px solid red;
+    color: yellow;
+    background: green;
+    border-radius: 5px;
+    text-align: left;
+}
 
 button:hover {opacity: 1}
