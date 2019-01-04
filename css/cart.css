@@ -70,6 +70,10 @@ body {
 .quantity {
     padding-top: 20px;
     margin-right: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px
 }
 
 .quantity input {
