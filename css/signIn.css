@@ -63,3 +63,10 @@ button:hover {opacity: 1}
     margin-top: 50px;
     text-align: center
 }
+
+.message {
+    text-align: center;
+    margin-top: 20px;
+    color: red;
+    font-weight: 800;
+}

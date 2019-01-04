@@ -1,4 +1,5 @@
 <?php
+session_start();
 require 'utils/Database.php';
 $db = new Database();
 
@@ -18,29 +19,9 @@ $lowSocks=$db->getLowSocks();
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 
 </head>
-<nav class="menu">
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="shopNow.html">Shop</a></li>
-        <li><a href="ContactUs.html">Contact Us</a></li>
-    </ul>
-
-    <div class="logo">
-        <a href="../html/signIn.html"><img src="../icons/profile.png"></a>
-        <a href="../html/wishList.html"><img src="../icons/wish.png"></a>
-        <a href="../html/cart.html"><img src="../icons/cart.png"></a>
-    </div>
-
-    <form class="search-form">
-        <input type="text" placeholder="Search">
-        <button>Search</button>
-    </form>
-</nav>
 
 <body>
-
-
+<? require 'templates/menu.php'?>
 
 <main>
 
@@ -69,7 +50,7 @@ $lowSocks=$db->getLowSocks();
             <?php foreach ($highSocks as $highSock):
                 ?>
                 <div class="item">
-                    <a href="blablabla"><img src="<?= $highSock['image'] ?>"></a>   <!-- change link -->
+                    <a href="product.php?id=<?= $highSock['product_id'] ?>"><img src="<?= $highSock['image'] ?>"></a>   <!-- change link -->
 
                     <p><?= $highSock['description'] ?></p>
                     <p><?= $highSock['price'] ?>$</p>
@@ -86,7 +67,7 @@ $lowSocks=$db->getLowSocks();
             <?php foreach ($lowSocks as $lowSock):
                 ?>
                 <div class="item">
-                    <a href="blablabla"><img src="<?= $lowSock['image'] ?>"></a>   <!-- change link -->
+                    <a href="product.php?id=<?= $lowSock['product_id'] ?>"><img src="<?= $lowSock['image'] ?>"></a>   <!-- change link -->
                     <p><?= $lowSock['description'] ?></p>
                     <p><?= $lowSock['price'] ?>$</p>
                 </div>
@@ -100,18 +81,7 @@ $lowSocks=$db->getLowSocks();
 
 </main>
 
-<div class="footer">
-    <div class="copyright">
-        <p>&copy 2018 - Crazy Socks</p>
-    </div>
-    <div class="social">
-        <ul>
-            <li><a href="../html/ContactUs.html" class="contact"><i class="far fa-envelope"></i></a></li>
-            <li><a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a></li>
-            <li><a href="#" class="instagram"><i class="fab fa-instagram"></i></a></li>
-        </ul>
-    </div>
-</div>
+<? require './templates/footer.php'?>
 
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 <script src="../javascript/shopNow.js"></script>
