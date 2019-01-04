@@ -1,16 +1,3 @@
-# ************************************************************
-# Sequel Pro SQL dump
-# Version 4541
-#
-# http://www.sequelpro.com/
-# https://github.com/sequelpro/sequelpro
-#
-# Host: 127.0.0.1 (MySQL 5.5.42)
-# Database: socks
-# Generation Time: 2019-01-04 15:14:42 +0000
-# ************************************************************
-
-
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
@@ -40,7 +27,9 @@ INSERT INTO `cart` (`cart_id`, `user_email`, `product_id`, `quantity`)
 VALUES
 	(16,'yos@yos.com',2,10),
 	(14,'dani@asdf.com',1,2),
-	(15,'dani@asdf.com',8,1);
+	(15,'dani@asdf.com',8,1),
+	(17,'',9,1),
+	(18,'',1,1);
 
 /*!40000 ALTER TABLE `cart` ENABLE KEYS */;
 UNLOCK TABLES;
@@ -77,12 +66,14 @@ VALUES
 	(8,'Diamond Sock ','Glow with color all day long with vibrant Faded Diamond socks.',9,'high',0,'https://s3.amazonaws.com/yossi-eynav-uploads/socks/8.png'),
 	(9,'Multi Stripe1 Sock','Line yourself up for a colorful day with Multi Stripe socks ',6,'low',0,'https://s3.amazonaws.com/yossi-eynav-uploads/socks/9.png'),
 	(10,'Pineapple Sock','Freshen up your outfit with these Pineapple socks.',5,'low',0,'https://s3.amazonaws.com/yossi-eynav-uploads/socks/10.png'),
-	(11,'Cherry Sock','Add a sweet touch to your outfit with a pair of Cherry socks. ',7,'low',0,'https://s3.amazonaws.com/yossi-eynav-uploads/socks/11.png'),
+	(11,'Cherry Sock','Add a sweet touch to your outfit with a pair of Cherry socks. ',7,'low',0,'https://s3.amazonaws.com/yossi-eynav-uploads/socks/11.png'),
 	(12,'Hamburger Sock','Treat your feet to some delicious Hamburger low socks.',9,'low',0,'https://s3.amazonaws.com/yossi-eynav-uploads/socks/12.png'),
 	(13,'Multi Stripe2 Sock','Line yourself up for a colorful day with Multi Stripe socks ',8,'low',0,'https://s3.amazonaws.com/yossi-eynav-uploads/socks/13.png'),
 	(14,'Watermelon Sock','Add a juicy detail to your outfit this summer with our Watermelon Low socks',10,'low',0,'https://s3.amazonaws.com/yossi-eynav-uploads/socks/14.png'),
 	(15,'Pear Sock','Add a juicy detail to your outfit this summer with our Pear  Low socks',11,'low',0,'https://s3.amazonaws.com/yossi-eynav-uploads/socks/15.png'),
-	(16,'Big Dot Sock','Add a sprinkle of color to your daily outfit with our Big Dot Low socks.',12,'low',0,'https://s3.amazonaws.com/yossi-eynav-uploads/socks/16.png');
+	(16,'Big Dot Sock','Add a sprinkle of color to your daily outfit with our Big Dot Low socks.',12,'low',0,'https://s3.amazonaws.com/yossi-eynav-uploads/socks/16.png'),
+	(17,'TWISTED SMILE SOCK','Start your day with a smile in a trippy, yellow pair of Twisted Smile socks',8.4,'high',NULL,'https://d2zn325e89kysk.cloudfront.net/media/catalog/product/cache/image/1024x600/9d1325c86aa13970ba5272241042ed09/T/S/TSM01-2000_1.png'),
+	(18,'LEOPARD LOW SOCK','Add a wild pep to your first step with stylish Athletic Leopard low socks',7.2,'low',NULL,'https://d2zn325e89kysk.cloudfront.net/media/catalog/product/cache/image/1024x600/9d1325c86aa13970ba5272241042ed09/A/T/ATLEO05-3000.png');
 
 /*!40000 ALTER TABLE `product` ENABLE KEYS */;
 UNLOCK TABLES;
@@ -218,7 +209,7 @@ VALUES
 	('sadf@asdfasasfdasdfassadfsafddf','asdasdfsafsadf@asdfsadf','sadfafs'),
 	('yoss@asdfgsadf.com','1','sadf'),
 	('dani@asdf.com','1','Dani'),
-	('','',''),
+	('m@w.m','99','mn'),
 	('yos@yos.com','1','yossi');
 
 /*!40000 ALTER TABLE `users` ENABLE KEYS */;
