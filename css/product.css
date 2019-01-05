@@ -49,13 +49,13 @@ body{
 }
 
 .desc{
-    font-size: 25px;
+    font-size: 12px;
     color: #4c495a;
 }
 
 .price{
     color: #4c495a;
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 700;
 }
 
@@ -71,8 +71,6 @@ body{
 .addbtn:hover{
     opacity: 0.7;
 }
-
-
 
 .ratingtitle{
     position: absolute;
@@ -127,7 +125,5 @@ body{
 .rating label:hover:after,
 .rating label:hover~ label:after,
 .rating input:checked ~ label:after{
-
     opacity: 1;
-
 }

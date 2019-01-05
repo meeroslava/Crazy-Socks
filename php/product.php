@@ -10,16 +10,18 @@ $product = $db->getProduct($_GET['id']);
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
-    <title>Shop Now</title>
+    <title><?= $product['title'] ?></title>
     <link href="http://fonts.googleapis.com/css?family=Nunito:400,300" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="../css/product.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
 </head>
+<?= include 'templates/menu.php'?>
 
 <body>
-<? require 'templates/menu.php'?>
 <div class="product-card">
     <div class="img">
         <img src="<?= $product['image'] ?>" alt="">
@@ -28,6 +30,7 @@ $product = $db->getProduct($_GET['id']);
         <h2><?= $product['title'] ?></h2>
         <span class="desc"><?= $product['description'] ?></span>
         <span class="price"><i class="ion-social-usd"></i><?= $product['price'] ?></span>
+
         <h3>Stars</h3>
         <p>stars</p>
 
@@ -58,7 +61,7 @@ $product = $db->getProduct($_GET['id']);
 
 </div>
 
-<? require 'templates/footer.php'?>
+<?= require 'templates/footer.php'?>
 
 </body>
 

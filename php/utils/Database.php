@@ -11,9 +11,9 @@ class Database {
 
         $servername = "localhost";
         $username = "root";
-        $password = "123456";
+        $password = "root";
 
-        $conn = new mysqli($servername, $username, $password, 'socks');
+        $conn = new mysqli($servername, $username, $password, 'project');
 
         self::$conn = $conn;
         return $conn;

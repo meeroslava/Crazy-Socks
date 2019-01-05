@@ -21,7 +21,7 @@ $lowSocks=$db->getLowSocks();
 </head>
 
 <body>
-<? require 'templates/menu.php'?>
+<?= include('templates/menu.php')?>
 
 <main>
 
@@ -81,7 +81,7 @@ $lowSocks=$db->getLowSocks();
 
 </main>
 
-<? require './templates/footer.php'?>
+<?= require './templates/footer.php'?>
 
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 <script src="../javascript/shopNow.js"></script>
