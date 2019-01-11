@@ -21,11 +21,9 @@ $user = $db->getUser();
 
 
 
-    <form class="search-form">
-
-        <input type="text" placeholder="Search">
-        <button>Search</button>
+    <form class="search-form" method="get" action="./searchResults.php">
+        <input type="text" name="search" placeholder="Search">
+        <button type="submit">Search</button>
         <p>Hello <?= $user['name'] ?></p>
-
     </form>
 </nav>

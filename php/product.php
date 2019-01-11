@@ -19,7 +19,7 @@ $product = $db->getProduct($_GET['id']);
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
 </head>
-<?= include 'templates/menu.php'?>
+<? include 'templates/menu.php'?>
 
 <body>
 <div class="product-card">
@@ -61,7 +61,7 @@ $product = $db->getProduct($_GET['id']);
 
 </div>
 
-<?= require 'templates/footer.php'?>
+<? include 'templates/footer.php'?>
 
 </body>
 

@@ -50,7 +50,7 @@ if($user) {
 </head>
 <body>
 
-<?= require 'templates/menu.php'?>
+<? include 'templates/menu.php'?>
 
 <div class="shopping-cart">
     <div class="title">
@@ -115,7 +115,7 @@ if($user) {
 </div>
 
 
-<?= require 'templates/footer.php'?>
+<? include 'templates/footer.php'?>
 
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 <script src="../javascript/cart.js"></script>

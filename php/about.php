@@ -13,7 +13,7 @@ session_start();
 </head>
 
 <body>
-<?= include 'templates/menu.php'?>
+<? include 'templates/menu.php'?>
 
 <main>
     <div class="header">
@@ -32,7 +32,7 @@ session_start();
 
 
 
-<?= include 'templates/footer.php'?>
+<? include 'templates/footer.php'?>
 
 </body>
 

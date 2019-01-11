@@ -42,7 +42,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 </head>
 
 <body>
-<?= include 'templates/menu.php'?>
+<? include 'templates/menu.php'?>
 
 <div class="form-wrap">
     <form method="POST" action="./register.php">
@@ -65,5 +65,5 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 </div>
 
-<?= include 'templates/footer.php'?>
+<? include 'templates/footer.php'?>
 </body>

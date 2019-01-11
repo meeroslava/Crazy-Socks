@@ -15,7 +15,7 @@ session_start();
     <script src="../javascript/contact-us.js"></script>
 </head>
 
-<?= require 'templates/menu.php'?>
+<? include 'templates/menu.php'?>
 <body>
 
 
@@ -37,6 +37,6 @@ session_start();
 </main>
 
 </body>
-<?= require 'templates/footer.php'?>
+<? include 'templates/footer.php'?>
 
 </html>

@@ -44,7 +44,7 @@ if($user) {
 
 </head>
 
-<?= require 'templates/menu.php'?>
+<? include 'templates/menu.php'?>
 
 <body>
 <div class="shopping-cart">
@@ -90,7 +90,7 @@ if($user) {
 
 </div>
 
-<?= require 'templates/footer.php'?>
+<? include 'templates/footer.php'?>
 
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 <script src="../javascript/wishList.js"></script>

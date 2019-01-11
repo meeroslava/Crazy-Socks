@@ -12,7 +12,7 @@ session_start();
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 </head>
 <body>
-<?= require 'templates/menu.php'?>
+<? include 'templates/menu.php'?>
 
 <main>
     <div class="header">
@@ -28,7 +28,7 @@ session_start();
 
 </main>
 
-<?= require 'templates/footer.php'?>
+<? include 'templates/footer.php'?>
 
 </body>
 </html>

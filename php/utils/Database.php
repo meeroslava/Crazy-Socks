@@ -11,9 +11,11 @@ class Database {
 
         $servername = "localhost";
         $username = "root";
-        $password = "root";
+        $password = "123456";
+        $password = "123456";
+        $password = "123456";
 
-        $conn = new mysqli($servername, $username, $password, 'project');
+        $conn = new mysqli($servername, $username, $password, 'socks');
 
         self::$conn = $conn;
         return $conn;
@@ -55,7 +57,7 @@ class Database {
     }
 
     public function getUser() {
-        if($_SESSION['user']) {
+        if(isset($_SESSION['user'])) {
             return $_SESSION['user'];
         } else {
             return ['name'=> 'Guest', 'user_email' => ''];
@@ -110,5 +112,9 @@ class Database {
 
     public function deleteFromWishList($product_id, $user_email) {
         return mysqli_query(self::$conn, "delete from wish_list where product_id='$product_id' and user_email='$user_email'");
+    }
+
+    public function searchSocks($text) {
+        return $this->query("Select * from product where title LIKE \"%$text%\" or description like \"%$text%\"");
     }
 }

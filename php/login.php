@@ -32,7 +32,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 </head>
 <body>
-<?= require 'templates/menu.php'?>
+<? include 'templates/menu.php'?>
 <div class="form-wrap">
     <form method="post" action="./login.php">
         <h1>Sign In</h1>
