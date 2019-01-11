@@ -2,8 +2,15 @@
 session_start();
 require_once 'utils/Database.php';
 $db = new Database();
+$user = $db->getUser();
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST' && $user['name'] !== 'Guest') {
+    $res = $db->addRating($_GET['id'], $_POST['star'], $user['user_email']);
+}
 
 $product = $db->getProduct($_GET['id']);
+$avg = $db->getProductAverage($_GET['id']);
+$userSelectedRating = $db->getUserSelectedRating($_GET['id'], $user['user_email']);
 ?>
 
 
@@ -32,7 +39,7 @@ $product = $db->getProduct($_GET['id']);
         <span class="price"><i class="ion-social-usd"></i><?= $product['price'] ?></span>
 
         <h3>Stars</h3>
-        <p>stars</p>
+        <p><?= number_format($avg, 2) ?> stars</p>
 
         <form method="post" action="./cart.php">
             <input type="hidden" name="product_id" value="<?= $product['product_id'] ?>">
@@ -47,22 +54,27 @@ $product = $db->getProduct($_GET['id']);
 
     </div>
 
-    <div class="ratingtitle">
-        <h3>Rate This Product</h3>
-    </div>
+    <?php if($user['name'] !== 'Guest'): ?>
+        <div>
+            <div class="ratingtitle">
+                <h3>Rate This Product</h3>
+            </div>
 
-    <div class="rating">
-        <input type="radio" name="star" id="star1"> <label for="star1"></label>
-        <input type="radio" name="star" id="star2"> <label for="star2"></label>
-        <input type="radio" name="star" id="star3"> <label for="star3"></label>
-        <input type="radio" name="star" id="star4"> <label for="star4"></label>
-        <input type="radio" name="star" id="star5"> <label for="star5"></label>
-    </div>
-
+            <form id="form-rating" method="post" action="./product.php?id=<?= $_GET['id']?>">
+                <div class="rating" >
+                    <input type="radio" name="star" value="5" id="star1" <?= $userSelectedRating == 5 ? 'checked': '' ?>/> <label for="star1"></label>
+                    <input type="radio" name="star" value="4" id="star2" <?= $userSelectedRating == 4 ? 'checked': '' ?>/> <label for="star2"></label>
+                    <input type="radio" name="star" value="3" id="star3" <?= $userSelectedRating == 3 ? 'checked': '' ?>/> <label for="star3"></label>
+                    <input type="radio" name="star" value="2" id="star4" <?= $userSelectedRating == 2 ? 'checked': '' ?>/> <label for="star4"></label>
+                    <input type="radio" name="star" value="1" id="star5" <?= $userSelectedRating == 1 ? 'checked': '' ?>/> <label for="star5"></label>
+                </div>
+            </form>
+        </div>
+    <? endif ?>
 </div>
 
 <? include 'templates/footer.php'?>
-
+<script src="../javascript/product.js"></script>
 </body>
 
 </html>

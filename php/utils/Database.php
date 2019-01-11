@@ -117,4 +117,19 @@ class Database {
     public function searchSocks($text) {
         return $this->query("Select * from product where title LIKE \"%$text%\" or description like \"%$text%\"");
     }
+
+    public function addRating($product_id, $rating, $user_email) {
+        mysqli_query(self::$conn, "DELETE from rating where user_email = \"$user_email\" and product_id = \"$product_id\"");
+        return mysqli_query(self::$conn, "insert into rating VALUES (\"$user_email\", \"$product_id\", \"$rating\")");
+    }
+
+    public function getProductAverage($product_id) {
+        $res = $this->query("select AVG(rating) as average from rating where product_id =\"$product_id\"");
+        return $res[0]['average'];
+    }
+
+    public function getUserSelectedRating($product_id, $user_email) {
+        $res = $this->query("select * from rating where product_id =\"$product_id\" and user_email=\"$user_email\"");
+        return sizeof($res) > 0 ? $res[0]['rating'] : null;
+    }
 }
