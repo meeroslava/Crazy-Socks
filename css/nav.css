@@ -69,3 +69,21 @@
 .menu button:hover{
     opacity: 1;
 }
+
+.menu .logged-out {
+    float: none;
+    padding: 3px 7px;
+    background-color: grey;
+    color: white;
+    margin-top: 5px;
+}
+
+.user-section {
+    clear: both;
+    float: right;
+    display: flex;
+    width: 279px;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 7px;
+}

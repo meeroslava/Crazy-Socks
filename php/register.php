@@ -18,6 +18,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $response = $db->createUser($name, $mail, $password1);
 
         if($response) {
+            $db->loginUser($mail, $password2);
             $message = 'User created successfully!';
         } else {
             $message = 'An error occurred!';

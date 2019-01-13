@@ -11,7 +11,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     $user = $db->loginUser($mail, $password);
 
-    if($user) {
+    if($user['name'] != 'Guest') {
         $message = "{$user['name']} is logged in.";
     } else {
         $message = 'An error occurred!';

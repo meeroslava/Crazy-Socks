@@ -19,11 +19,21 @@ $user = $db->getUser();
         <a href="./cart.php"><img src="../icons/cart.png"></a>
     </div>
 
-
-
     <form class="search-form" method="get" action="./searchResults.php">
         <input type="text" name="search" placeholder="Search">
         <button type="submit">Search</button>
-        <p>Hello <?= $user['name'] ?></p>
+
     </form>
+
+    <div class="user-section">
+        <strong>
+            Hello <?= $user['name'] ?>
+        </strong>
+        <?php if($user['name'] != 'Guest'): ?>
+            <form method="get" action="./index.php">
+                <input name="logged_out" value="1" type="hidden" />
+                <button type="submit" class="logged-out">Logged Out</button>
+            </form>
+        <? endif ?>
+    </div>
 </nav>

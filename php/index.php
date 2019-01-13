@@ -1,5 +1,10 @@
 <?php
 session_start();
+
+if(isset($_GET['logged_out'])) {
+    unset($_SESSION['user']);
+    session_destroy();
+}
 ?>
 
 <!DOCTYPE html>
@@ -23,8 +28,6 @@ session_start();
         </div>
         <a href="./shop.php">Shop Now</a>
     </div>
-
-
 
 </main>
 
